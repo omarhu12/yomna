@@ -1,0 +1,916 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 5rem;
+  position: relative;
+  z-index: 100;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  /* opacity: 0.7; */
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+}
+
+.hamburger {
+  display: none;
+}
+
+ul li #contact a {
+  border: 1px solid #dbdcd1;
+  padding: 0.5rem 1.5rem;
+  margin-top: -0.5rem;
+  margin-left: 2.5rem;
+}
+
+section#firstPage {
+  background-color: #1f3e67;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+section#firstPage div.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section#firstPage div.container div.text {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section#firstPage div.container div.text h1 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 55px;
+  color: #dbdcd1;
+}
+
+section#firstPage div.container div.text p {
+  font-family: "Nunito Sans", sans-serif;
+  color: #b3b3b3;
+}
+
+section#firstPage div.container div.text p#one {
+  font-size: 1, 2rem;
+}
+
+section#firstPage div.container div.text p#two {
+  font-size: 1.4rem;
+}
+
+section#firstPage div.container div.text button {
+  background-color: #dbdcd1;
+  border: none;
+  color: #1f3e67;
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  font-family: "Nunito Sans", sans-serif;
+  width: fit-content;
+}
+
+section#firstPage div.container img {
+  height: 100vh;
+  width: 45%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 1250px) {
+  section#firstPage div.container img {
+    width: 55%;
+  }
+}
+@media (max-width: 900px) {
+  section#firstPage {
+    height: fit-content;
+  }
+  section#firstPage div.container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  section#firstPage div.container div.text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  section#firstPage div.container img {
+    width: 100%;
+    position: static;
+  }
+  header ul li {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 55px;
+    /* height: 35px; */
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  header a i img {
+    width: 25rem;
+  }
+
+  section#firstPage div.container div.text p#one {
+    font-size: 2.8rem;
+  }
+
+  section#firstPage div.container div.text p#two {
+    font-size: 3rem;
+  }
+
+  section#firstPage div.container div.text h1 {
+    font-size: 70px;
+    line-height: 6rem;
+  }
+  section#firstPage div.container div.text button {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  header a i img {
+    width: 20rem;
+  }
+
+  section#firstPage div.container div.text p#one {
+    font-size: 2rem;
+  }
+
+  section#firstPage div.container div.text p#two {
+    font-size: 2.2rem;
+  }
+
+  section#firstPage div.container div.text h1 {
+    font-size: 60px;
+    line-height: 5rem;
+  }
+  section#firstPage div.container div.text button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header a i img {
+    width: 18rem;
+  }
+
+  section#firstPage div.container div.text p#one {
+    font-size: 2rem;
+  }
+
+  section#firstPage div.container div.text p#two {
+    font-size: 2rem;
+  }
+
+  section#firstPage div.container div.text h1 {
+    font-size: 50px;
+    line-height: 4rem;
+  }
+  section#firstPage div.container div.text button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  header a i img {
+    width: 15rem;
+  }
+
+  section#firstPage div.container div.text p#one {
+    font-size: 1.8rem;
+  }
+
+  section#firstPage div.container div.text p#two {
+    font-size: 1.8rem;
+  }
+
+  section#firstPage div.container div.text h1 {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+  section#firstPage div.container div.text button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header a i img {
+    width: 15rem;
+  }
+
+  section#firstPage div.container div.text p#one {
+    font-size: 1.3rem;
+  }
+
+  section#firstPage div.container div.text p#two {
+    font-size: 1.2rem;
+  }
+
+  section#firstPage div.container div.text h1 {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+  section#firstPage div.container div.text button {
+    font-size: 1.1rem;
+  }
+}
+
+section#secondPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  height: 100vh;
+  background-color: #c9dffc;
+  /* gap: 2rem; */
+}
+
+section#secondPage p#secondPageTxt {
+  color: #003655;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  max-width: 700px;
+}
+
+section#secondPage img {
+  width: 30%;
+}
+
+@media (max-width: 1100px) {
+  section#secondPage {
+    flex-direction: column;
+    height: fit-content;
+  }
+  section#secondPage img {
+    width: 35%;
+  }
+  section#secondPage p#secondPageTxt {
+    color: #003655;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.5rem;
+    max-width: 80%;
+  }
+}
+@media (max-width: 900px) {
+  section#secondPage {
+    flex-direction: column;
+    height: fit-content;
+  }
+  section#secondPage img {
+    width: 55%;
+  }
+  section#secondPage p#secondPageTxt {
+    color: #003655;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2rem;
+    max-width: 70%;
+  }
+}
+
+:root {
+  --softRed: hsl(14, 88%, 65%);
+  --veryDarkGrayBlue: hsl(237, 12%, 33%);
+  --darkGrayBlue: hsl(240, 6%, 50%);
+  --lightGrayBlue: hsl(240, 5%, 91%);
+  --fontSize: 12px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--fontSize);
+}
+
+section#thirdPage {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: #cce6ff;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section#thirdPage h1 {
+  font-size: 3rem;
+  color: #003655;
+}
+
+.question-answer__accordion > .answer {
+  display: none;
+}
+
+.active > .answer {
+  display: block;
+  font-size: 1.4rem;
+  padding-bottom: 1.3rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.active img {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in;
+}
+
+.accordion__wrapper {
+  display: flex;
+  width: 70%;
+  background-color: #003655;
+  padding: 7rem;
+  border-radius: 2rem;
+  color: white;
+  /* margin: auto; */
+  flex-direction: column;
+}
+
+.questions__accordions {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-answer__accordion {
+  /* width: 350px; */
+  border-bottom: 1px solid #e8e8ea;
+}
+
+.title__question {
+  font-weight: 400;
+  font-size: 2rem;
+  color: (var(--veryDarkGrayBlue));
+  margin: 1.4rem 0rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.active h3 {
+  font-weight: 700;
+}
+
+.question img {
+  align-self: center;
+}
+
+.box {
+  position: absolute;
+  top: 42%;
+  left: -25%;
+}
+
+@media (max-width: 750px) {
+  .box {
+    width: 55px;
+    left: 19%;
+    top: -30%;
+  }
+  .active > .answer {
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+    color: white;
+    opacity: 0.8;
+  }
+  .accordion__wrapper {
+    margin-top: 0px;
+  }
+  .accordion__wrapper {
+    width: 95%;
+  }
+  .question-answer__accordion {
+    width: 100%;
+  }
+
+  .title__question {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1250px) {
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+@media (max-width: 550px) {
+  section#thirdPage h1 {
+    font-size: 1.7rem;
+  }
+  .accordion__wrapper {
+    width: 95%;
+  }
+}
+
+section#forthPage {
+  font-family: "Space Mono", monospace;
+  background-color: #e1f1ff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+section#forthPage h1#headline {
+  text-align: center;
+  color: #003655;
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 30px;
+  margin: 2rem 0;
+}
+section#forthPage p#headtxt {
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(0, 54, 85, 0.8);
+}
+
+section#forthPage div.main {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 60%;
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+section#forthPage div.main div.first {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+  margin: 1rem;
+}
+section#forthPage div.main div.first div input {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+section#forthPage div.main div.second {
+  display: flex;
+  flex-direction: column;
+  background-color: #003655;
+  padding: 2rem;
+  width: 50%;
+  height: 100%;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+
+section#forthPage div.main div.second .num {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+input#HomePrice::placeholder,
+input#DownPayment::placeholder,
+input#InterestRate::placeholder,
+input#Loanterm::placeholder {
+  position: absolute;
+  right: 0;
+  padding: 0.2rem 1.5rem;
+  height: fit-content;
+  font-size: 1.5rem;
+}
+
+input#HomePrice,
+input#DownPayment,
+input#Loanterm,
+input#InterestRate {
+  height: 2.5rem;
+  width: 95%;
+  border: none;
+  padding: 0 1.2rem;
+  text-align: right;
+  margin: 0;
+  margin-top: 1rem;
+  background-color: #e1f1ff;
+  font: inherit;
+  font-size: 1.5rem;
+  color: #003655;
+  /* border: none; */
+  /* border: 1px solid hsl(172, 67%, 45%); */
+}
+
+.tipFlex,
+.totalFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2#total,
+h2#Interest,
+h2#tipAmount {
+  font-size: 2.5rem;
+  color: white;
+}
+
+label {
+  color: #003655;
+  /* margin-bottom: 1rem; */
+}
+
+p {
+  color: white;
+  font-size: 1.3rem;
+}
+span {
+  opacity: 0.5;
+}
+
+section#forthPage div.main div.second button {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  color: hsla(202, 100%, 17%, 1);
+  background-color: hsla(202, 99%, 81%, 0.5);
+  border-radius: 5px;
+  border: none;
+  font: inherit;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+label {
+  width: 80%;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  section#forthPage {
+    height: fit-content;
+    padding-bottom: 5rem;
+  }
+  section#forthPage div.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 60%;
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  section#forthPage div.main div.first {
+    width: 100%;
+  }
+  section#forthPage div.main div.second {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  section#forthPage div.main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  section#forthPage div.main {
+    width: 95%;
+  }
+}
+
+section#final {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./image/Frame\ 32.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  background-position: center;
+}
+
+section#final h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 5rem;
+
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  color: #003655;
+}
+
+section#final div.finalColumn {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  width: 100%;
+}
+
+section#final div.finalColumn div.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+
+section#final div.finalColumn div.info div.infoTxt p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+div.infoTxt h2 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #fffafa;
+}
+
+section#final div.finalColumn div.info div.location {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+section#final div.finalColumn div.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #003655;
+  padding: 3rem 5rem;
+  width: 40%;
+}
+
+section#final div.finalColumn div.contact label {
+  color: white;
+  font-family: "Nunito Sans";
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+section#final div.finalColumn div.contact input {
+  background-color: hsla(202, 100%, 81%, 0.5);
+  color: white;
+  /* border-radius: 5px; */
+  border: none;
+  height: 30px;
+}
+
+section#final div.finalColumn div.contact input#message {
+  height: 80px;
+}
+
+section#final div.finalColumn div.contact button#formSubmit {
+  font: inherit;
+  font-size: 1.5rem;
+  border: 1px solid rgb(51, 67, 100);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  /* margin: auto; */
+  margin-top: 2rem;
+  background-color: hsla(202, 100%, 81%, 0.5);
+}
+
+@media (max-width: 1250px) {
+  section#final div.finalColumn div.contact {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  section#final {
+    height: fit-content;
+    background-image: url("./image/Frame\ 33.png");
+    background-size: 100% 100%;
+  }
+  section#final div.finalColumn div.contact {
+    width: 80%;
+    margin: 5rem auto;
+  }
+
+  section#final div.finalColumn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#final h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  section#final h1 {
+    font-size: 3rem;
+  }
+}
+
+footer {
+  background-color: hsla(214, 87%, 17%, 1);
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  /* opacity: 0.7; */
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+}
+
+footer div#social {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+ol {
+  background-color: #003655;
+  /* border: 2px solid black; */
+  width: 55%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+}
+
+ol li a {
+  text-decoration: none;
+  color: #fff;
+  /* opacity: 0.7; */
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+}
+
+ol li#contact a {
+  border: 1px solid #dbdcd1;
+  padding: 0.5rem 1.5rem;
+  margin-top: -0.5rem;
+  margin-left: 0;
+}
+
+.hamburger {
+  position: relative;
+  display: none;
+  width: 55px;
+  z-index: 100000000;
+  /* height: 35px; */
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 80%;
+  border-radius: 5px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+  }
+  ol {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  ol {
+    width: 100%;
+    
+  }
+
+}

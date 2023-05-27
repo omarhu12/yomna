@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    
+  </head>
+  <body>
+    <main>
+      <section id="firstPage">
+        <header>
+          <a href="#"
+            ><i><img src="./image/Group 28.svg" alt="" /></i
+          ></a>
+          <ul>            <li><a href="#secondPage">About</a></li>
+            <li><a href="#thirdPage">Mortgage</a></li>
+            <li><a href="#forthPage">Calculator</a></li>
+            <li id="contact"><a href="#final">Contact</a></li>
+          </ul>   
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+             <ol>
+                <li id="about"><a href="#secondPage">About</a></li>
+                <li id="mortgage"><a href="#thirdPage">Mortgage</a></li>
+                <li id="calculator"><a href="#forthPage">Calculator</a></li>
+                <li id="contact" class="ol"><a href="#final">Contact</a></li> 
+             </ol>
+        </header>
+        <div class="container">
+          <div class="text">
+            <h1>
+              yomna <br />
+              shalaby
+            </h1>
+            <p id="one">Realtor® at Sutton Premier Realty</p>
+            <p id="two">
+              Lets make your dream home a reality! <br />
+              Don't hesitate to contact me
+            </p>
+            <button>Contact Now</button>
+          </div>
+          <img src="./image/Frame 30.png" alt="" />
+        </div>
+      </section>
+      <section id="secondPage">
+        <img src="./image/Screenshot (103) 1.png" alt="" />
+
+        <p id="secondPageTxt">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </section>
+
+      <section id="thirdPage">
+        <h1>TYPES OF MORTGAGES</h1>
+        <div class="accordion__wrapper">
+            <div class="question-answer__accordion">
+              <div class="question">
+                <h3 class="title__question">
+                  High-ratio mortgages
+                </h3>
+                <img src="./image/Line 63.png" />
+              </div>
+              <div class="answer">
+              A high-ratio mortgage is a home loan in which the buyer’s down payment is less than 20%, meaning they have to borrow more than 80% of their home’s value.
+On a $600,000 home, for example, you’d be in a high-ratio mortgage if you put down less than $120,000.
+When you take out a high-ratio mortgage, you’ll be required to purchase loan insurance as a means of protecting your lender, which is why high-ratio mortgages are also called “insured mortgages.”
+              </div>
+            </div>
+
+            <div class="question-answer__accordion">
+              <div class="question">
+                <h3 class="title__question">Conventional mortgages</h3>
+                <img src="./image/Line 63.png" />
+              </div>
+              <div class="answer">
+               Conventional mortgages are the flip side of the high-ratio mortgage coin. If you make a down payment of 20% or more on a home, you’ll find yourself in a conventional mortgage.
+Putting 20% down is a tall order for many buyers, but it’s a must if you’re purchasing any property priced at $1 million or more.
+There’s no mortgage insurance required when you make a down payment of this size, so conventional mortgages are also referred to as “uninsured mortgages.”
+              </div>
+            </div>
+
+            <div class="question-answer__accordion">
+              <div class="question">
+                <h3 class="title__question">Variable rate mortgages</h3>
+                <img src="./image/Line 63.png" />
+              </div>
+              <div class="answer">
+              The rate of interest charged on variable-rate mortgages may rise or fall depending on which way the Bank of Canada moves its overnight rate. The higher the overnight rate goes, the more your monthly mortgage payments will increase.
+Variable rate mortgages are inherently more risky for borrowers, and the risk increases whenever inflation rises and the Bank of Canada has to tamp it down with higher rates. But variable rates are generally lower than fixed rates, which is why they can be attractive to some borrowers.
+              </div>
+            </div>
+
+            <div class="question-answer__accordion">
+              <div class="question">
+                <h3 class="title__question">
+                  Fixed-rate mortgages
+                </h3>
+                <img src="./image/Line 63.png" />
+              </div>
+              <div class="answer">
+               With a fixed-rate mortgage, the interest rate you agree to with your lender at the outset of your loan will remain the same for the entirety of your loan term.
+If you sign a five-year fixed-rate mortgage at 4%, for example, your interest rate will be 4% until the end of that five-year term.
+Fixed-rate mortgages are the preferred option of borrowers who don’t want — or can’t afford — to have their mortgage payments fluctuate. But that stability comes at a price — higher interest rates and prepayment penalties that can take your breath away.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="forthPage">
+        <h1 id="headline">HOW MUCH CAN YOU AFFORD?</h1>
+        <p id="headtxt">USE THIS MORTGAGE CALCULATOR TO HELP YOU FIGURE THINGS OUT</p>
+        <div class="main">
+          <div class="first">
+            <div class="input" >
+              <label for="HomePrice">Home Price</label>
+              <input   id="HomePrice" type="text" placeholder="$" />
+            </div>
+            <div class="input" >
+              <label for="DownPayment">Down Payment</label>
+              <input  type="text" id="DownPayment" placeholder="$" />
+            </div>
+            <div class="input" >
+              <label for="Loanterm">Loan Term</label>
+              <input  type="text" id="Loanterm" placeholder="Y" />
+            </div>
+            <div class="input" >
+              <label for="InterestRate">Interest Rate</label>
+              <input  type="text" id="InterestRate" placeholder="%" />
+            </div>
+          </div>
+          <div class="second">
+           <div class="num">
+             <div class="tip">
+              <div class="tipFlex">
+              <div>
+                <p>Annual <br> <span>Payment</span></p>
+              </div>
+              <h2 id="tipAmount">$0.00</h2>
+              </div>
+            </div>
+             <div class="tip">
+              <div class="tipFlex">
+              <div>
+                <p>total <br> <span>Rate </span></p>
+              </div>
+              <h2 id="Interest">%0.00</h2>
+              </div>
+            </div>
+            <div class="total">
+              <div class="totalFlex">
+              <div>
+                <p>Monthly <br> <span>Payment</span></p>
+              </div>
+              <h2 id="total">$0.00</h2>
+            </div>
+              </div>
+           </div>
+            <button>calculate</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="final">
+          <h1>Let’s Get You Home</h1>
+            <div class="finalColumn">
+                 <div class="info">
+            <div class="location ">
+                <i><img src="./image/Group 44.png" alt=""></i>
+                <div class="infoTxt">
+                    <h2>Address</h2>
+                    <p>Vancouver, British Columbia</p>
+                </div>
+            </div>
+            <div class="location ">
+                <i><img src="./image/Group 45.png" alt=""></i>
+                <div class="infoTxt">
+                    <h2>Phone</h2>
+                    <p>+1 778-232-3800</p>
+                </div>
+            </div>
+            <div class="location">
+                <i><img src="./image/Group 46.png" alt=""></i>
+                <div class="infoTxt">
+                    <h2>Email</h2>
+                    <p> yom.shalaby@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+                <div class="input">
+                    <label for="name">name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input">
+                    <label for="phone">phone</label>
+                    <input type="number" id="phone">
+                </div>
+            <div class="email">
+                <div class="input">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+                </div>
+            </div>
+            <div class="message">
+                <div class="input">
+                    <label for="message">how can we help</label>
+                    <input type="text" id="message">
+                </div>
+            </div>
+            <button id="formSubmit" type="submit">Submit</button>
+        </div>
+            </div>
+      </section>
+    </main>
+
+    <footer>
+        <a href="#"
+            ><i><img src="./image/Group 28.svg" alt="" /></i
+        ></a>
+          <ul>
+            <li><a href="#secondPage">About</a></li>
+            <li><a href="#thirdPage">Mortgage</a></li>
+            <li><a href="#forthPage">Calculator</a></li>
+            <li><a href="#final">Contact</a></li>
+          </ul>
+          <div id="social">
+            <a target="_blank" href="https://www.instagram.com/yomnashalaby.realtor/"><i><img src="./image/Vector.png" alt=""></i></a>
+           <a target="_blank" href="https://www.facebook.com/profile.php?id=100070890968949"> <i><img src="./image/Vector-1.png" alt=""></i></a>
+          </div>
+    </footer>
+  </body>
+</html>
